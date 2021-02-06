@@ -6,16 +6,16 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-•	![Filebeat Playbook](https://github.com/jboyd72/ELK-Stack-Deployment/blob/main/Ansible/filebeat_playbook.yml)
-•	![Metricbeat Playbook](https://github.com/jboyd72/ELK-Stack-Deployment/blob/main/Ansible/metricbeat_playbook.yml)
+- ![Filebeat Playbook](https://github.com/jboyd72/ELK-Stack-Deployment/blob/main/Ansible/filebeat_playbook.yml)
+- ![Metricbeat Playbook](https://github.com/jboyd72/ELK-Stack-Deployment/blob/main/Ansible/metricbeat_playbook.yml)
 
 This document contains the following details:
-•	Description of the Topology
-•	Access Policies
-•	ELK Configuration
-•	Beats in Use
-•	Machines Being Monitored
-•	How to Use the Ansible Build
+- Description of the Topology
+- Access Policies
+- ELK Configuration
+- Beats in Use
+- Machines Being Monitored
+- How to Use the Ansible Build
 
 ### Description of the Topology
 
@@ -24,8 +24,8 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly reliable and available, in addition to restricting access to the network. Load balancers also protect against a DdoS attack by distributing traffic accross mutiple servers. The Jump box allows for easy configuration for all servers from one central server.
 
 Integrating an ELK server allows users to easily monitor the vulnerable Vms for changes to the log files and system metrics.
-•	filebeat collects log data from the system.
-•	metricbeat collects machine metrics.
+- filebeat collects log data from the system.
+- metricbeat collects machine metrics.
 
 The configuration details of each machine may be found below.
 
@@ -42,7 +42,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Load Balancer can accept connections from the Internet. Access to the Load Balancer is only allowed from the Host machine.
 
 Machines within the network can only be accessed by the JUMP BOX
-•	The public IP of the Jump Box.
+- The public IP of the Jump Box.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -58,18 +58,18 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 -	Installs docker.io
--   Installs python3
--   Installs docker ELK container
+- Installs python3
+- Installs docker ELK container
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-- /Ansible/ELK_docker_ps_output.png
+![Screenshot](https://github.com/jboyd72/ELK-Stack-Deployment/blob/main/Ansible/ELK_docker_ps_screenshot.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - Web1 10.0.0.7
 - Web2 10.0.0.8
-_ Web3 10.0.0.10
+- Web3 10.0.0.10
 
 We have installed the following Beats on these machines:
 - filebeat
