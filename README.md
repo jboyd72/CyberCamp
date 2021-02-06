@@ -1,2 +1,2 @@
-# CyberCamp
-Bootcamp Projects
+# ELK Stack Deployment
+SC Projects
