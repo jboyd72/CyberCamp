@@ -2,11 +2,12 @@
 
 The files in this repository were used to configure the network depicted below.
 
-/Diagrams/Jeff Boyd WK12 HW Cloud Diagram
+![Diagram](https://github.com/jboyd72/ELK-Stack-Deployment/blob/main/Ansible/ELK_Stack_Cloud_Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-•	filebeat-playbook.yml , metricbeat-playbook.yml
+•	![Filebeat Playbook](https://github.com/jboyd72/ELK-Stack-Deployment/blob/main/Ansible/filebeat_playbook.yml)
+•	![Metricbeat Playbook](https://github.com/jboyd72/ELK-Stack-Deployment/blob/main/Ansible/metricbeat_playbook.yml)
 
 This document contains the following details:
 •	Description of the Topology
