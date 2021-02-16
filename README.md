@@ -1,2 +1,2 @@
 # ELK Stack Deployment
-SC Projects
+CS Projects
